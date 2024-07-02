@@ -3,31 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Goals</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Terfa John's Tech Goals</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1 data-testid="slackDisplayName">Terfa John</h1>
-        <img src="your-profile-picture.jpg" alt="Slack Profile Picture" data-testid="slackProfilePicture" width="your-width" height="your-height">
+        <img src="images/profile-picture.jpg" alt="Slack Profile Picture" data-testid="slackProfilePicture" width="150" height="150">
+
     </header>
-    <section>
-        <p data-testid="slackEmail">your-email@example.com</p>
-        <p data-testid="currentTimeUTC"></p>
-        <p data-testid="currentDay"></p>
-        <h2>My Goals for the Next 2 Years</h2>
-        <ul>
-            <li>Upskill</li>
-            <li>Get a Job</li>
-            <li>Fund My Project Ideas</li>
-        </ul>
+    <main>
+        <section class="info-section">
+            <p data-testid="slackEmail">terfajohn45@gmail.com</p>
+            <p data-testid="currentTimeUTC"></p>
+            <p data-testid="currentDay"></p>
+        </section>
+        <section class="goals-section">
+            <h2>My Goals for the Next 2 Years</h2>
+            <ul>
+                <li><strong>UPSKILL:</strong> I plan to enhance my knowledge and skills in frontend and backend development, focusing on mastering advanced JavaScript frameworks, cloud computing, and DevOps practices.</li>
+                <li><strong>GET A JOB:</strong> My aim is to secure a full-time position as a software developer in a dynamic and innovative tech company where I can apply my skills and continue to grow professionally.</li>
+                <li><strong>FUND MY PROJECT IDEAS:</strong> I intend to work on and fund my startup product, LearnSpaces, and other innovative project ideas by either bootstrapping or securing investments.</li>
+            </ul>
+        </section>
         <footer>
             <a href="https://hng.tech/learn" data-testid="hngLink">HNG</a>
             <a href="https://keyword.dog" data-testid="keywordLink">Keyword</a>
             <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a>
         </footer>
-    </section>
+    </main>
     <script src="app.js"></script>
 </body>
 </html>
+
 
