@@ -5,23 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terfa John's Tech Goals</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.jpg" type="image/png">
 </head>
 <body>
     <header>
-        <h1 data-testid="slackDisplayName">Terfa John</h1>
-        <img src="images/profile-picture.jpg" alt="Slack Profile Picture" data-testid="slackProfilePicture" width="150" height="150">
-
+        <div class="profile-container">
+            <img src="images/profile-picture.jpg" alt="Slack Profile Picture" data-testid="slackProfilePicture" class="profile-picture">
+            <h1 data-testid="slackDisplayName">Terfa John</h1>
+        </div>
+        <div class="theme-toggle">
+            <label for="theme-toggle">Theme:</label>
+            <button id="theme-toggle">Toggle</button>
+        </div>
     </header>
     <main>
         <section class="info-section">
-            <p data-testid="slackEmail">terfajohn45@gmail.com</p>
-            <p data-testid="currentTimeUTC"></p>
-            <p data-testid="currentDay"></p>
+            <div class="info-item">
+                <span>Email:</span>
+                <p data-testid="slackEmail">terfajohn45@gmail.com</p>
+            </div>
+            <div class="info-item">
+                <span>Current Time (UTC):</span>
+                <p data-testid="currentTimeUTC"></p>
+            </div>
+            <div class="info-item">
+                <span>Current Day:</span>
+                <p data-testid="currentDay"></p>
+            </div>
         </section>
         <section class="goals-section">
             <h2>My Goals for the Next 2 Years</h2>
             <ul>
-                <li><strong>UPSKILL:</strong> I plan to enhance my knowledge and skills in frontend and backend development, focusing on mastering advanced JavaScript frameworks, cloud computing, and DevOps practices.</li>
+                <li><strong>UPSKILL</strong> I plan to enhance my knowledge and skills in frontend and backend development, focusing on mastering advanced JavaScript frameworks, cloud computing, and DevOps practices.</li>
                 <li><strong>GET A JOB:</strong> My aim is to secure a full-time position as a software developer in a dynamic and innovative tech company where I can apply my skills and continue to grow professionally.</li>
                 <li><strong>FUND MY PROJECT IDEAS:</strong> I intend to work on and fund my startup product, LearnSpaces, and other innovative project ideas by either bootstrapping or securing investments.</li>
             </ul>
