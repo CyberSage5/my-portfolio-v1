@@ -10,27 +10,40 @@ body {
     color: #333;
 }
 
-/* Header Styles */
 header {
     background-color: #6200ea;
     color: white;
     padding: 20px;
     text-align: center;
     width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 header img {
     border-radius: 50%;
     margin-top: 10px;
+    width: 150px; /* Specify your actual image width */
+    height: 150px; /* Specify your actual image height */
 }
 
-/* Section Styles */
-section {
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.info-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.goals-section {
     background: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -41,24 +54,23 @@ section {
     text-align: center;
 }
 
-section h2 {
+.goals-section h2 {
     color: #6200ea;
     margin-bottom: 20px;
 }
 
-section ul {
+.goals-section ul {
     list-style-type: none;
     padding: 0;
 }
 
-section ul li {
+.goals-section ul li {
     background: #e0e0e0;
     margin: 10px 0;
     padding: 10px;
     border-radius: 4px;
 }
 
-/* Footer Styles */
 footer {
     margin-top: 20px;
 }
@@ -80,7 +92,15 @@ footer a:hover {
         padding: 10px;
     }
 
-    section {
+    .goals-section {
         padding: 10px;
     }
+
+    header img {
+        border-radius: 50%;
+        margin-top: 10px;
+        width: 150px; /* Adjust based on actual image size */
+        height: 150px; /* Adjust based on actual image size */
+    }
+    
 }
